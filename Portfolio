@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+
+	<title>My portfolio</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="This is my personal portfolio for hiring purpose">
+	<meta name="keywords" conteny="portfolio , cericullam vitaie , resume , skills">
+	<meta name="author" content="Rohit">
+	<meta name="robots" content="index,follow">
+	<meta name="revised" content="new,portfolio,html,css,design,code,25/11/2022">
+	<meta http-equiv="refresh" content="60">
+
+	<link rel="icon" type="image/png" href="My-logo.png">
+
+	<style type="text/css">
+
+		@import url("https://fonts.googleapis.com/css2?family=poppins:wght@400;500;600;700&display=swap");
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: "Poppins", sans-serif;
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+
+		nav{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 30px 100px;
+		}
+
+		.logo{
+			max-height: 70px; border:2px solid  #02c0fa; border-radius:50%;
+		}
+
+		.logo:hover{border-color: black; }
+
+		nav ul li{
+			list-style: none;
+			display: inline-block;
+			padding: 10px 20px;
+		}
+		nav ul li a{
+			color: #02c0fa;
+			position: relative;
+			padding: 5px 0;
+		}
+		nav ul li a:hover{
+			color:#0597f2;
+		}
+		nav ul li a:after{
+			content: "";
+			position: absolute;
+			left: 0;
+			width: 0;
+			height: 3px;
+			background: #0597f2;
+			transition: 0.3s;
+			bottom: 0;
+		}
+
+		nav ul li a:hover:after{
+			width: 100%;
+		}
+
+		.btn{
+			color: #fff;
+			font-size: 16px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			padding: 16px 40px;
+			border-radius: 500px;
+			display: inline-block;
+			font-weight: 500;
+			transition: all 0.4s ease-in-out;
+			background-size: 152% 100%;
+			background: #0298e8;
+			border:2px solid #0298e8;
+		}
+		.btn:hover{
+			background: transparent;
+			border-color: #0298e8;
+			color: #0298e8;
+		}
+		.content{
+			position: absolute;
+			top: 35%;
+			left: 8%;
+		}
+		.content .title{
+			color: #0a0a0a;
+			font-size: 15px;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			display: inline-block;
+			margin-bottom: 20px;
+			background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%, #fd4766 79.69%);
+			-webkit-background-clip:text;
+			-webkit-text-fill-color:transparent;
+		}
+
+		.content h1{
+			color: #1f1f25;
+			font-size: 75px;
+			font-weight: 900;
+			line-height: 90px;
+			text-transform: inherit;
+			width: 70%;
+		}
+
+		.content h1 span{
+			color: #02c0fa;
+		}
+
+		.content p {
+			width: 55%;
+			color: #202020;
+			margin-top: 25px;
+			margin-bottom: 30px;
+		}
+
+		.image{width:45%; height:80%; position:absolute; bottom:0; right:100px;}
+
+		.image img{height: 100%; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); transition: bottom 1s , left 1s;}
+
+		.image:hover .shape1{bottom: 40px;}
+
+		.image:hover .myimage{left: 45%;}
+
+	</style>
+
+</head>
+<body background="Hire.png">
+
+<nav>
+     <a href="My-logo.png">
+       <img src="My-logo.png"alt="logo" class="logo">
+     </a>
+<ul>
+<li><a href="about-me-page.html"><b>About me</b></a></li>
+<li><a href="https://www.linkedin.com/in/rohitprogrammer/"><b>Linkdin</b></a></li>
+<li><a href="https://github.com/Rohit-Programme"><b>Github</b></li>
+<li><a href="file:///C:/CODING/Projects/Portfolio/Project-Page.html"><b>MyProjects</b></a></li>
+<li><a href="file:///C:/CODING/Projects/Portfolio/contact-page.html"><b>Contact</b></a></li>
+</ul>
+<a href="#" class="btn">Resume</a>
+</nav>
+
+<div class="content">
+<span class="title"><h3>Web Developer</h3></span>
+<h1>Hello, I'm <span>Rohit</span></h1>
+<p>	
+I'm working on a professional, visually sophisticated and technologically proficient ,responsive and multi-functional React components.   
+</p>
+<a href="#" class="btn">Download CV</a>
+</div>
+
+<div class="image">	
+<img src="Shape.png" width="494px" height="700px" class="shape1"> 
+<img src="MyImage.png" alt="myimage" class="myimage">
+</div>
+</div>
+
+</body>
+</html>
